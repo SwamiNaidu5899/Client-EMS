@@ -27,9 +27,9 @@ function AddEmployee({
         setEmployee({ ...employee, [name]: value });
     };
 
-    const handleFileChange = (e) => {
-        setEmployee({ ...employee, profileImage: e.target.files[0] });
-    };
+    // const handleFileChange = (e) => {
+    //     setEmployee({ ...employee, profileImage: e.target.files[0] });
+    // };
 
     const resetEmployeeStates = () => {
         setEmployee({
@@ -139,7 +139,7 @@ function AddEmployee({
                                     required
                                 />
                             </div>
-                            <div className="mb-3">
+                            {/* <div className="mb-3">
                                 <label className="form-label">Profile Image</label>
                                 <input
                                     type="file"
@@ -147,7 +147,7 @@ function AddEmployee({
                                     name="profileImage"
                                     onChange={handleFileChange}
                                 />
-                            </div>
+                            </div> */}
                             <button type="submit"
                                 className="btn btn-primary">
                                 {updateMode ? 'Update' : 'Save'}
